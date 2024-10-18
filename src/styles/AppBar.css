@@ -14,7 +14,7 @@
 }
 
 .app-bar-logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -23,7 +23,10 @@
 .app-bar-menu {
     display: flex;
     align-items: center;
+    gap: 20px; /* Distanță între elementele meniului */
+    margin-left: 20px;
 }
+
 
 .app-bar-menu select,
 .app-bar-menu input {
@@ -43,7 +46,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto; /* Mută butonul în dreapta */
 }
+
 
 .app-bar-button:hover {
     background-color: #66bb6a;

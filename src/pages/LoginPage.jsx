@@ -8,6 +8,9 @@ const LoginPage = () => {
             <Login />
             <p>
                 <Link to="/register">Create an account</Link>
+                <div className="forgot-password">
+                    <Link to="/reset-password">Forgot Password?</Link>
+                </div>
             </p>
         </div>
     );
