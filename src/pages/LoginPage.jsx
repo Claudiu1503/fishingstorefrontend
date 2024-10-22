@@ -4,14 +4,21 @@ import '../styles/Login.css';
 
 const LoginPage = () => {
     return (
-        <div className="auth-page">
-            <Login />
-            <p>
-                <Link to="/register">Create an account</Link>
-                <div className="forgot-password">
-                    <Link to="/reset-password">Forgot Password?</Link>
+        <div className="login-container">
+            <div className="home-button-wrapper">
+                <Link to="/" className="home-button">
+                    Go to Homepage
+                </Link>
+            </div>
+            <div className="auth-page">
+                <Login />
+                <div className="auth-links">
+                    <Link to="/register">Create an account</Link>
+                    <div className="forgot-password">
+                        <Link to="/reset-password">Forgot Password?</Link>
+                    </div>
                 </div>
-            </p>
+            </div>
         </div>
     );
 };

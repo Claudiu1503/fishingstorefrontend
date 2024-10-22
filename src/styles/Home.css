@@ -1,0 +1,13 @@
+.hometitle {
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px; /* Balance the spacing */
+}
+
+.saysomgud {
+    text-align: right;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 0;
+}

@@ -1,27 +1,30 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/AppBar.css';
 
 const AppBar = () => {
+    const navigate = useNavigate(); // Use the hook to navigate
+
+    const handleLoginClick = () => {
+        navigate('/login'); // Navigate to the /login page when clicked
+    };
+
     return (
         <header className="app-bar">
             <Link to="/" className="app-logo">
                 FishingStore
             </Link>
-            <nav>
+            <nav className="app-bar-menu">
                 <select className="product-categories">
-                    <option value="">Categories</option>
                     <option value="rods">Fishing Rods</option>
                     <option value="baits">Baits</option>
-                    {/* Adaugă aici categorii */}
                 </select>
                 <input type="text" className="search-bar" placeholder="Search products..." />
-                <Link to="/login" className="login-register-btn">
-                    Login / Register
-                </Link>
             </nav>
+            <button className="login-register-btn" onClick={handleLoginClick}>
+                <span>Login / Register</span>
+            </button>
         </header>
     );
 };
 
 export default AppBar;
-
